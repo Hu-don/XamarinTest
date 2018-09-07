@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Test.Xamarin.Views.MenuPage"
+             BackgroundColor="White"
+            >
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical"
+                     Spacing="0"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Fill">
+        
+            <StackLayout Orientation="Vertical"
+                         BackgroundColor="#518FAA"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="Center"
+                        >
+                
+                 <Image Source="lab_logo.png"
+                        Aspect="AspectFit"
+                       HeightRequest="150"
+                       Margin="0, 30, 0, 0"
+                       />
+                
+                <Label Text="DemoXamarin"
+                       Font="HelveticaNeue-Thin.ttf"
+                       HorizontalTextAlignment="Center"
+                       Margin="0, 30, 0, 0"
+                       FontSize="Large"              
+                       TextColor="White">
+                   <Label.FontFamily>
+    <OnPlatform x:TypeArguments="x:String">
+        <OnPlatform.iOS>HelveticaNeue-Thin</OnPlatform.iOS>
+        <OnPlatform.Android>HelveticaNeue-Thin.ttf#HelveticaNeue-Thin</OnPlatform.Android>
+    </OnPlatform>
+</Label.FontFamily>
+
+                    </Label>
+              </StackLayout>
+                <Image Source="lab_separator.png"
+                       Aspect="Fill"
+                       Margin="0, 0, 0, 10"
+                       />
+               <StackLayout Orientation="Vertical"
+                         HorizontalOptions="FillAndExpand"
+                            BackgroundColor="Teal"
+                            Margin="15, 10, 15, 0"
+                         VerticalOptions="Center">
+                
+                 <Button Text="Counter"
+                        WidthRequest="120"
+                        TextColor="White"
+                         FontSize="Medium"
+                         FontAttributes="Bold"
+                        Clicked="LoadCounterPage"/>
+                
+                </StackLayout>
+            
+             <StackLayout Orientation="Vertical"
+                         HorizontalOptions="FillAndExpand"
+                            BackgroundColor="Teal"
+                            Margin="15, 10, 15, 0"
+                         VerticalOptions="Center">
+                
+                 <Button Text="Tabs"
+                        WidthRequest="120"
+                        TextColor="White"
+                         FontSize="Medium"
+                         FontAttributes="Bold"
+                        Clicked="LoadTabPage"/>
+                
+                </StackLayout>
+            
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="FillAndExpand"
+                            BackgroundColor="Teal"
+                            Margin="15, 10, 15, 0"
+                         VerticalOptions="Center">
+                
+                 <Button Text="List"
+                        WidthRequest="120"
+                        TextColor="White"
+                         FontSize="Medium"
+                         FontAttributes="Bold"
+                        Clicked="LoadListPage"/>
+                
+                </StackLayout>
+            
+            </StackLayout>
+            
+    </ContentPage.Content>
+</ContentPage>

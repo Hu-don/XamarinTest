@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.Xamarin.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+                <Setter Property="BarBackgroundColor" Value="White"/>
+                <Setter Property="BarTextColor" Value="Blue"/> 
+            </Style>
+            <Style x:Key="boutonLabStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Blue" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

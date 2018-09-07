@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="List" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.Xamarin.ListePage">
+    <ContentPage.Content>
+        
+        <ListView
+            x:Name="listArticle">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal"
+                                     Margin="15, 0, 15, 0"
+                                     HorizontalOptions="FillAndExpand">
+                            <Label TextColor="Black" Text="{Binding Name}"></Label>
+                            <Label TextColor="Black" HorizontalOptions="EndAndExpand" Text="{Binding Price}"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+    </ContentPage.Content>
+</ContentPage>

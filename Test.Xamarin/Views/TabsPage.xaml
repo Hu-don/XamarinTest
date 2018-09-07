@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+         x:Class="Test.Xamarin.TabsPage"
+            BarBackgroundColor="#508Ca7"
+            Title="Tabs"
+            xmlns:views="clr-namespace:Test.Xamarin">
+            
+    <TabbedPage.BarBackgroundColor>
+    <OnPlatform x:TypeArguments="Color">
+        <OnPlatform.iOS>White</OnPlatform.iOS>
+        <OnPlatform.Android>#508ca7</OnPlatform.Android>
+    </OnPlatform>
+    </TabbedPage.BarBackgroundColor>
+    <views:Avion Icon="lab_icon_avion.png"/>
+    <views:Voiture Icon="lab_icon_voiture.png"/>
+</TabbedPage>
