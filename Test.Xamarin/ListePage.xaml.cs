@@ -23,8 +23,9 @@ namespace Test.Xamarin
             listArticle.ItemsSource = articles;
             listArticle.ItemSelected += (sender, e) =>
             {
+                Article item = listArticle.SelectedItem as Article;
                 if (listArticle.SelectedItem != null) {
-                    DisplayAlert("Articles", "Click sur ", "Ok");
+                    DisplayAlert(item.Name, "Prix : "+item.Price, "Ok");
                     listArticle.SelectedItem = null;
                 }
               
